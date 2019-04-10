@@ -154,8 +154,8 @@ int main()
        .CHECK_OUTPUT(++d , "32[min]") 
        .CHECK_OUTPUT(--d , "31[min]") 
        .CHECK_OUTPUT(--d , "30[min]")
-       .CHECK_OUTPUT(PhysicalNumber(25, Unit::HOUR)++, "26[hour]") //  chack postfix ++
-       .CHECK_OUTPUT(PhysicalNumber(25, Unit::SEC)-- ,"24[sec]") // lenght chack postfix --
+       .CHECK_OUTPUT(PhysicalNumber(25, Unit::HOUR)++, "26[hour]") 
+       .CHECK_OUTPUT(PhysicalNumber(25, Unit::SEC)-- ,"24[sec]") 
        .CHECK_EQUAL((PhysicalNumber(25, Unit::SEC)--) != (PhysicalNumber(23, Unit::SEC)++)) ,true)
 
 
